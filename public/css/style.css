@@ -1,0 +1,242 @@
+/* -----Adobe Fonts----- */
+@import url("https://use.typekit.net/mkj0qph.css");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+/* ------CSS Variables------ */
+:root{
+    --navbar-color: #4e3d62;
+    /* --intro_section_content_color: #0060ff; */
+    --intro_section_content_color: rgb(253 203 164);
+}
+
+/* -----CSS RESET----- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ------Utility Classes------ */
+.remove_li_style{
+    list-style: none;
+}
+
+.remove_text_decoration{
+    text-decoration: none;
+}
+
+.section_main_headings{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section_main_headings h1{
+    font-size: 5rem;
+}
+
+.section_main_headings p{
+    font-size: 1.4rem;
+    color: #787878;
+}
+
+.muli_regular_300{
+    font-family: muli, sans-serif;
+    font-weight: 300;
+}
+
+.muli_regular_600{
+    font-family: muli, sans-serif;
+    font-weight: 600;
+}
+
+.playfair_display_600{
+    font-size: 4rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+}
+
+.playfair_display_900{
+    font-size: 4rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+}
+
+.bread_color{
+    border-color: #dacaad !important;
+}
+/* ------Body------- */
+
+/* body{
+
+} */
+
+/* -----NavBar Styling------ */
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--navbar-color);
+    width: 100vw;
+    z-index: 10;
+    position: sticky;
+}
+
+.logo{
+    max-width: 7rem;
+    max-height: 7rem;
+    /* border-bottom: 3px solid black; */
+    /* border-radius: 100%; */
+    position: relative;
+    z-index: 10;
+}
+
+#logo{
+    position: relative;
+    width: 11rem;
+    display: flex;
+    max-height: 7rem;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+#logo::before{
+    content: '';
+    position: absolute;
+    width: 14rem;
+    height: 13rem;
+    background: var(--navbar-color) /*no-repeat center center/cover*/;
+    z-index: 9;
+    opacity: 1;
+    border-radius: 50%;
+}
+
+#left_links, #right_links{
+    width: 40%;
+}
+
+#left_links ul, #right_links ul{
+    display: flex;
+    overflow-wrap: break-word;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#left_links ul li a, #right_links ul li a{
+    text-transform: uppercase;
+    color:  var(--intro_section_content_color);
+    margin: 0px 1.5em;
+    font-family: muli, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    transition: all 0.6s ease-out;
+}
+
+#left_links ul li a:hover, #right_links ul li a:hover{
+    color: aquamarine;
+}
+
+/* ---------Intro Section Styling---------- */
+#intro_section{
+    max-width: 100vw;
+    min-height: 80vh;
+    position: relative;
+    z-index: 8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#intro_section::before{
+    content: '';
+    width: 100vw;
+    min-height: 80vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('../images/coffee_mug_on_table.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position-y: 83%;
+    background-size: cover;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+#intro_section_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+#intro_section_content h1{
+    z-index: 8;
+    font-size: 5rem;
+    text-align: center;
+    width: 15ch;
+    color: var(--intro_section_content_color);
+    text-shadow: black 1px 1px 1px;
+}
+
+#intro_section_content p{
+    width: 54ch;
+    color: var(--intro_section_content_color);
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 2rem;
+    line-height: 1.6rem;
+    text-shadow: black 1px 1px 1px;
+}
+
+.vertical_border_container{
+    height: 140px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vertical_border{
+    border-left: 3px solid var(--intro_section_content_color);
+    position: relative;
+    top: 40px;
+    height: 100px;
+}
+
+.vertical_border_animate{
+    animation: vertical_border_animation 1s linear infinite alternate;
+}
+
+@keyframes vertical_border_animation {
+    from{
+        height: 0px;
+    }
+    to{
+        height: 100px;
+    }
+}
+
+/* -------Our Coffee Section Styling--------- */
+#our_coffee_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+/* --------Media Queries--------- */
+@media screen and (max-width: 960px) {
+    #navbar{
+        display: none;
+    }
+}
