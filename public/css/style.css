@@ -7,6 +7,8 @@
     --navbar-color: #4e3d62;
     /* --intro_section_content_color: #0060ff; */
     --intro_section_content_color: rgb(253 203 164);
+    --we_serve_section_bg: #f8f7f5;
+    --we_serve_section_cards_headings_color: #a9855b;
 }
 
 /* -----CSS RESET----- */
@@ -81,6 +83,7 @@
 .bread_color{
     border-color: #dacaad !important;
 }
+
 /* ------Body------- */
 
 html{
@@ -89,7 +92,7 @@ html{
 }
 
 body{
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 /* -----NavBar Styling------ */
@@ -327,6 +330,10 @@ body{
     color: #b9a787;
 }
 
+.container_main_btn_div{
+    margin-bottom: 5rem;
+}
+
 .container_main_btn{
     padding: 2rem 4rem;
     font-size: 0.9rem;
@@ -362,6 +369,124 @@ body{
 
 .container_main_btn:hover{
     color: black;
+}
+
+/* ---------We Serve Section----------- */
+#we_serve_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    background-color: var(--we_serve_section_bg);
+    padding: 0 6rem;
+}
+
+#we_serve_section .we_serve_headings{
+    margin-top: 5rem;
+}
+
+.we_serve_section_cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 9rem;
+    padding: 0 8rem;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card h3{
+    transform: rotate(90deg);
+}
+
+.card img{
+    width: 50rem;
+    height: 30rem;
+}
+
+.we_serve_section_cards_headings{
+    margin-left: 7rem;
+}
+
+.we_serve_section_cards_headings h1{
+    color: var(--we_serve_section_cards_headings_color) !important;
+}
+
+.we_serve_section_cards_headings button{
+    margin-top: 3rem;
+    color: black !important;
+    background-color: white !important;
+    border: 2px solid var(--we_serve_section_cards_headings_color) !important;
+}
+
+.we_serve_section_cards button::before{
+    background-color: var(--we_serve_section_cards_headings_color) !important;
+}
+
+.we_serve_section_cards button:hover{
+    color: white !important;
+}
+
+.we_serve_section_card_right{
+    flex-direction: row-reverse;
+}
+
+.we_serve_section_card_right .we_serve_section_cards_headings{
+    margin-left: 0;
+    margin-right: 7rem;
+}
+
+.we_serve_section_cards .card:not(:first-child){
+    margin-top: 10rem;
+}
+
+.we_serve_section_cards .card:last-child{
+    margin-bottom: 8rem;
+}
+
+/* -------Coffee and us Section-------- */
+#coffee_and_us_section{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 6rem;
+    margin-right: 6rem;
+}
+
+.coffee_and_us_section_img{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 22rem;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 6rem;
+}
+
+.coffee_and_us_section_img button{
+    border: none !important;
+}
+
+.coffee_and_us_section_img::before{
+    content: '';
+    position: absolute;
+    background: url('../images/we_coffee_default.jpg');
+    background-position: center;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
 
 /* --------Media Queries--------- */
