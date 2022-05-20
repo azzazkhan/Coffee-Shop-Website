@@ -322,7 +322,7 @@ html{
 }
 
 .img_slider_next_btn:hover{
-    left: calc(90vw + 10px);
+    left: calc(89vw + 10px);
 }
 
 .slider_imgs_headings h3{
@@ -811,6 +811,14 @@ html{
 
     .lower_footer{
         padding: 3rem;
+    }
+
+    .img_slider_next_btn{
+        left: 80vw !important;
+    }
+
+    .img_slider_next_btn:hover{
+        left: 80vw;
     }
 }
 
