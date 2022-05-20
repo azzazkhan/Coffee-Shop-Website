@@ -95,6 +95,10 @@ html{
 /* body{
 } */
 
+.container{
+    overflow-x: hidden;
+}
+
 /* -----NavBar Styling------ */
 #navbar{
     display: flex;
@@ -103,7 +107,7 @@ html{
     background-color: var(--navbar-color);
     width: 100%;
     z-index: 10;
-    position: sticky;
+    position: fixed;
 }
 
 .logo{
@@ -207,6 +211,7 @@ html{
     width: 100%;
     color: white;
     text-shadow: black 1px 1px 1px;
+    margin-top: 6rem;
 }
 
 #intro_section_content p{
