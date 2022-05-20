@@ -1,3 +1,4 @@
+// Image Slider
 let image_slider_next_btn = document.getElementById("image_slider_next_btn");
 var coffee_slider_images = document.querySelector(".coffee_slider_images");
 
@@ -29,3 +30,17 @@ let img_slider_event_listener = () => {
 };
 
 image_slider_next_btn.addEventListener("click", img_slider_event_listener);
+
+
+// Mobile Nav
+let responsive_nav_icon = document.getElementById("responsive_nav_icon");
+let mobile_nav = document.getElementById("mobile_nav");
+
+let triggerResponsiveNav = () => {
+    mobile_nav.style.transform == `scaleX(0)` ? mobile_nav.style.transform = `scaleX(1)` : mobile_nav.style.transform = `scaleX(0)`;
+}
+
+
+
+responsive_nav_icon.addEventListener("click", triggerResponsiveNav);
+
