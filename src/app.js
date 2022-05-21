@@ -22,6 +22,10 @@ app.get("/", (req, res) => {
     res.render("home");
 });
 
+app.get("/coffee-at-the-office", (req, res) => {
+    res.render("coffee_at_the_office");
+});
+
 app.listen(port, () => {
     console.log(`Listening on port ${port}`);
 });

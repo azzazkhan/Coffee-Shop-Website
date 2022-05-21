@@ -29,6 +29,8 @@ let img_slider_event_listener = () => {
     }
 };
 
+console.log(image_slider_next_btn);
+
 image_slider_next_btn.addEventListener("click", img_slider_event_listener);
 
 
