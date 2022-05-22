@@ -26,6 +26,18 @@ app.get("/coffee-at-the-office", (req, res) => {
     res.render("coffee_at_the_office");
 });
 
+app.get("/coffee-in-vending", (req, res) => {
+    res.render("coffee_in_vending");
+});
+
+app.get("/coffee-in-cafe", (req, res) => {
+    res.render("coffee_in_cafe");
+});
+
+app.get("/our-coffee", (req, res) => {
+    res.render("our_coffee");
+});
+
 app.listen(port, () => {
     console.log(`Listening on port ${port}`);
 });

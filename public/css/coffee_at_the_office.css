@@ -178,7 +178,7 @@
     }
 }
 
-@media screen and (max-width: 734px) {
+@media screen and (max-width: 765px) {
     .we_serve_section_cards_headings h1, .we_serve_section_cards_headings p{
         text-align: center;        
     }
@@ -189,8 +189,13 @@
         justify-content: center;
     }
 
+    .micro_market_content_img img{
+        margin-left: 0;
+    }
+
     .micro_market_content_list{
         margin-top: 3rem;
+        width: 100%;
     }
 
     .micro_market_content_list li{
@@ -202,7 +207,7 @@
 @media screen and (max-width: 560px) {
     .promote_section{
         flex-direction: column;
-        height: 19rem;
+        height: auto;
         padding: 3rem 1rem 3rem 1rem;
     }
 
@@ -234,6 +239,10 @@
         font-size: 1.3rem;
     }
 
+    .business_services_section{
+        padding: 0 1rem;
+    }
+
     .business_services_section .business_services_section_lists{
         text-align: center;
         list-style: none;
@@ -255,6 +264,18 @@
 @media screen and (max-width: 290px){
     .micro_market_content_img img{
         width: 15rem;
+        height: 8rem;
+    }
+
+    .card img{
+        width: 14rem !important;
+        height: 9rem !important;
+    }
+}
+
+@media screen and (max-width: 240px){
+    .micro_market_content_img img{
+        width: 10rem;
         height: 8rem;
     }
 }

@@ -1,0 +1,58 @@
+/* -------Navigation Styling--------- */
+.our_coffee_navigation{
+    background-color: #f8f7f5;
+    padding: 3rem 0 0 0;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 6px 9px 0 rgb(0 0 0 / 6%), 0 1px 1px 0 rgb(0 0 0 / 3%);
+    z-index: 1;
+}
+
+.our_coffee_navigation_items_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.our_coffee_navigation_item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid #e9e7e4;
+    padding: 0 2rem 1.5rem 1rem;
+}
+
+.our_coffee_navigation_item:last-child{
+    border-right: 1px solid #e9e7e4;
+}
+
+.our_coffee_navigation_item img{
+    width: 2.5rem;
+    height: 4.5rem;
+}
+
+.our_coffee_navigation_item p{
+    font-size: .8rem;
+    color: #787878;
+    width: 50%;
+    margin-left: 1.5rem;
+}
+
+.item_active{
+    border-bottom: 2px solid #dacaad;
+}
+
+/* -------Intro Section Styling----------- */
+#intro_section{
+    margin-top: 5rem;
+    min-height: 68vh;
+}
+
+#intro_section::before{
+    margin-top: 6rem;
+    min-height: 68vh !important;
+}
+
+#intro_section_content h1{
+    z-index: 0 !important;
+}

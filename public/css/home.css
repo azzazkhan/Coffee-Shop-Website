@@ -39,6 +39,7 @@
 
 .section_main_headings h1{
     font-size: 4rem;
+    width: 80%;
 }
 
 .section_main_headings p{
@@ -110,6 +111,7 @@ html{
     z-index: 2;
     position: fixed;
     box-shadow: black 1px -4px 9px;
+    top: 0;
 }
 
 .logo{
