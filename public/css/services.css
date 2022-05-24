@@ -1,24 +1,17 @@
-/* --------Business Services Section Styling----------- */
-.business_services_section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #f8f7f5;
-    margin: 0 4rem;
-    padding: 5rem 0;
+/* -------Card Styling-------- */
+.we_serve_section_cards_headings{
+    width: 40%;
 }
 
-.business_services_section .business_services_section_lists{
-    margin: 6rem 0 5rem 0;
+.we_serve_section_cards_headings p {
+    margin-top: 3rem;
+    line-height: 2rem;
+    color: #787878;
 }
 
-.business_services_section .business_services_section_lists li{
-    font-size: 1.2rem;
-}
-
-.business_services_section .business_services_section_lists li:not(:first-child){
-    margin-top: 2rem;
+.our_coffee_section_cards .card img{
+    width: 27rem;
+    height: 20rem;
 }
 
 /* ---------Promote Section Styling */
@@ -59,22 +52,6 @@
     color: white !important;
 }
 
-/* -------Card Styling-------- */
-.we_serve_section_cards_headings{
-    width: 40%;
-}
-
-.we_serve_section_cards_headings p {
-    margin-top: 3rem;
-    line-height: 2rem;
-    color: #787878;
-}
-
-.our_coffee_section_cards .card img{
-    width: 27rem;
-    height: 20rem;
-}
-
 /* --------Media Queries--------- */
 @media screen and (max-width: 765px) {
     .we_serve_section_cards_headings{
@@ -84,7 +61,6 @@
     .we_serve_section_cards_headings h1, .we_serve_section_cards_headings p{
         text-align: center;        
     }
-    
 }
 
 @media screen and (max-width: 560px) {
@@ -104,16 +80,6 @@
 }
 
 @media screen and (max-width: 490px){
-    .business_services_section{
-        padding: 4rem 1rem;
-    }
-
-    .business_services_section .business_services_section_lists{
-        text-align: center;
-        list-style: none;
-        padding: 0 2rem;
-    }
-
     .promote_section .text{
         font-size: 1.3rem;
     }
@@ -124,21 +90,21 @@
 }
 
 @media screen and (max-width: 390px) {
-    .our_coffee_section_cards .card img{
+    .card img{
         width: 22rem;
         height: 16rem;
     }
 }
 
 @media screen and (max-width: 302px) {
-    .our_coffee_section_cards .card img{
+    .card img{
         width: 18rem;
         height: 14rem;
     }
 }
 
 @media screen and (max-width: 230px) {
-    .our_coffee_section_cards .card img{
+    .card img{
         width: 14rem;
         height: 12rem;
     }

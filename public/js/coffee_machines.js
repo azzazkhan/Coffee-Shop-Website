@@ -6,10 +6,7 @@ let triggerResponsiveNav = () => {
     mobile_nav.style.transform == `scaleX(0)` ? mobile_nav.style.transform = `scaleX(1)` : mobile_nav.style.transform = `scaleX(0)`;
 }
 
-
-
 responsive_nav_icon.addEventListener("click", triggerResponsiveNav);
-
 
 // Intro section modification
 let intro_section_heading = document.getElementById("intro_section_heading");
@@ -22,7 +19,8 @@ intro_section_heading.innerText = intro_section_heading_Text;
 intro_section_paragraph.innerText = intro_section_paragraph_Text;
 
 let root = document.querySelector(":root");
-root.style.setProperty("--intro_section_bg_img_url", `url("../images/kava14316_kkedit_desktop_1.jpg")`);
+root.style.setProperty("--intro_section_bg_img_url", `url("../images/shutter_stock_coffee_machine_cleanup.jpg")`);
+
 
 // Inner Navigation Event Listener
 const inner_navigation_section = document.querySelectorAll(".inner_navigation_section");
@@ -38,37 +36,28 @@ window.addEventListener("scroll", () => {
         }
     });
     
-    if(currentSection.includes("coffee_address")){
+    if(currentSection.includes("small")){
         our_coffee_navigation_item.forEach(item => {
             item.classList.remove("item_active");
-            if(item.classList.contains("coffee_address")){
+            if(item.classList.contains("small")){
                 item.classList.add("item_active");
             }
         });
     }
     
-    else if(currentSection.includes("atlas")){
+    else if(currentSection.includes("medium")){
         our_coffee_navigation_item.forEach(item => {
             item.classList.remove("item_active");
-            if(item.classList.contains("atlas")){
+            if(item.classList.contains("medium")){
                 item.classList.add("item_active");
             }
         });
     }
 
-    else if(currentSection.includes("lavazza")){
+    else if(currentSection.includes("large")){
         our_coffee_navigation_item.forEach(item => {
             item.classList.remove("item_active");
-            if(item.classList.contains("lavazza")){
-                item.classList.add("item_active");
-            }
-        });
-    }
-
-    else if(currentSection.includes("kimbo")){
-        our_coffee_navigation_item.forEach(item => {
-            item.classList.remove("item_active");
-            if(item.classList.contains("kimbo")){
+            if(item.classList.contains("large")){
                 item.classList.add("item_active");
             }
         });

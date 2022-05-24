@@ -3,7 +3,7 @@ html, body{
     scroll-behavior: smooth !important;
 }
 
-/* -------Navigation Styling--------- */
+/* -------Inner Navigation Styling------ */
 .our_coffee_navigation{
     background-color: #f8f7f5;
     padding: 3rem 0 0 0;
@@ -48,7 +48,7 @@ html, body{
     border-bottom: 2px solid #dacaad;
 }
 
-/* -------Intro Section Styling----------- */
+/* -------Intro Section Styling------- */
 #intro_section{
     margin-top: 5rem;
     min-height: 68vh;
@@ -63,18 +63,9 @@ html, body{
     z-index: 0 !important;
 }
 
-/* ------Our Coffee Section Styling------- */
-.our_coffee_section_headings{
-    margin-top: 5rem;
-}
-
-.our_coffee_section_secondary_headings{
-    margin-top: 5rem;
-}
-
-.our_coffee_section_secondary_headings h1{
-    font-size: 3rem !important;
-    font-weight: 500 !important;
+/* --------Coffee Machines Section Styling-------- */
+.coffee_machines_section .coffee_machines_section_headings{
+    margin-top: 5rem !important;
 }
 
 /* ------Cards Styling------ */
@@ -100,11 +91,11 @@ html, body{
     font-weight: 400 !important;
 }
 
-.atlas, .kimbo{
+.medium{
     background-color: #f7f6f2;
 }
 
-.atlas .section_main_headings h1, .kimbo .section_main_headings h1{
+.medium .section_main_headings h1{
     margin-top: 2rem !important;
 }
 

@@ -38,6 +38,14 @@ app.get("/our-coffee", (req, res) => {
     res.render("our_coffee");
 });
 
+app.get("/coffee-machines", (req, res) => {
+    res.render("coffee_machines");
+});
+
+app.get("/services", (req, res) => {
+    res.render("services");
+});
+
 app.listen(port, () => {
     console.log(`Listening on port ${port}`);
 });
