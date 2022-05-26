@@ -46,6 +46,10 @@ app.get("/services", (req, res) => {
     res.render("services");
 });
 
+app.get("/coffee-and-us", (req, res) => {
+    res.render("coffee_and_us");
+});
+
 app.listen(port, () => {
     console.log(`Listening on port ${port}`);
 });

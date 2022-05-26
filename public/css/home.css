@@ -612,6 +612,7 @@ html{
 .policy_checkbox input{
     margin-right: 0.4rem;
     cursor: pointer;
+    accent-color: var(--we_serve_section_cards_headings_color);
 }
 
 .policy_checkbox label{
